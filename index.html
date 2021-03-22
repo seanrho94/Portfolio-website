@@ -12,30 +12,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="./main.js" defer></script>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar section-spacing">
+  <nav class="navbar section-spacing" data-scroll-header>
     <div class="navbar__container">
       <div class="navbar__logo">
         <a href="./index.html"><img src="./imgs/logo.png" alt="logo" class="logo__img"></a>
       </div>
       <ul class="navbar__menu">
-        <div class="icon navbar__cancel-btn">
+        <div class="navbar__icon navbar__cancel-btn">
           <i class="fas fa-times"></i>
         </div>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item" data-link="#home">HOME</li>
+        <li class="navbar__menu__item"><a href="#home" data-link="#home">HOME</a></li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item" data-link="#about">ABOUT</li>
+        <li class="navbar__menu__item"><a href="#about" data-link="#about">ABOUT</a></li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item" data-link="#works">WORKS</li>
+        <li class="navbar__menu__item"><a href="#works" data-link="#works">WORKS</a></li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item" data-link="#contact">CONTACT</li>
+        <li class="navbar__menu__item"><a href="#contact" data-link="#contact">ABOUT</a></li>
         <div class="navbar__menu-divider"></div>
       </ul>
-      <div class="icon navbar__toggle-btn">
+      <div class="navbar__icon navbar__toggle-btn">
         <i class="fas fa-bars"></i>
       </div>
     </div>
