@@ -478,6 +478,42 @@ p {
   text-align: center;
 }
 
+/* Contact */
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: var(--color-blue);
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links {
+  margin-top: 10px;
+}
+
+.link a,
+.link__divider {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+.link__divider {
+  margin: 0px 10px;
+}
+
+.link a {
+  letter-spacing: 2px;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.link a:hover {
+  color: var(--color-orange);
+}
+
 /* For below 768px screen */
 @media screen and (max-width: 768px) {
   /* Common Section */
