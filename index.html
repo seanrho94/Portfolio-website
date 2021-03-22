@@ -26,13 +26,13 @@
           <i class="fas fa-times"></i>
         </div>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item">HOME</li>
+        <li class="navbar__menu__item" data-link="#home">HOME</li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item">ABOUT</li>
+        <li class="navbar__menu__item" data-link="#about">ABOUT</li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item">WORKS</li>
+        <li class="navbar__menu__item" data-link="#works">WORKS</li>
         <div class="navbar__menu-divider"></div>
-        <li class="navbar__menu__item">CONTACT</li>
+        <li class="navbar__menu__item" data-link="#contact">CONTACT</li>
         <div class="navbar__menu-divider"></div>
       </ul>
       <div class="icon navbar__toggle-btn">
@@ -41,7 +41,7 @@
     </div>
   </nav>
   <!-- Home -->
-  <section class="home section-spacing">
+  <section class="section-spacing" id="home">
     <div class="home__container">
       <div class="home__intro">
         <h3>HELLO</h3>
@@ -56,7 +56,8 @@
     </div>
   </section>
 
-  <section class="about section-spacing">
+  <!-- About -->
+  <section class="section-spacing" id="about">
     <div class="section__container">
       <h3 class="section__heading">ABOUT</h3>
       <h1>Personal Info</h1>
@@ -84,7 +85,8 @@
     </div>
   </section>
 
-  <section class="works section-spacing">
+  <!-- Works -->
+  <section class="section-spacing" id="works">
     <div class="section__container">
       <h3 class="section__heading">WORKS</h3>
       <h1>Latest Projects</h1>
@@ -161,7 +163,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact section-spacing">
+  <section class="section-spacing" id="contact">
     <div class="section__container">
       <h3 class="section__heading">Contact</h3>
       <h1>Say Hello.</h1>

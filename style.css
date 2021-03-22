@@ -10,12 +10,12 @@
   --color-blue: #11354c;
 
   /* Font size */
-  --font-large: calc(4rem + 0.4vw); /* 48 */
-  --font-medium: calc(2.5rem + 0.4vw); /* 28 */
-  --font-regular: calc(1.6rem + 0.4vw); /* 18 */
-  --font-small: calc(1.4rem + 0.4vw); /* 16 */
-  --font-micro: calc(0.8rem + 0.4vw); /* 14 */
-  --font-h1-mobile: calc(3rem + 0.4vw); /* 14 */
+  --font-large: calc(4rem + 0.4vw);
+  --font-medium: calc(2.5rem + 0.4vw);
+  --font-regular: calc(1.6rem + 0.4vw);
+  --font-small: calc(1.4rem + 0.4vw);
+  --font-micro: calc(0.8rem + 0.4vw);
+  --font-h1-mobile: calc(3rem + 0.4vw);
 
   /* Font weight */
   --weight-bold: 700;
@@ -164,7 +164,7 @@ p {
 }
 
 /* Home */
-.home {
+#home {
   height: 100vh;
 }
 
@@ -233,7 +233,7 @@ p {
 }
 
 /* About */
-.about {
+#about {
   background-color: var(--color-white);
 }
 
@@ -277,7 +277,7 @@ p {
 }
 
 /* Works */
-.works {
+#works {
   width: 100%;
 }
 
@@ -355,7 +355,7 @@ p {
 }
 
 /* Contact */
-.contact {
+#contact {
   background-color: var(--color-white);
 }
 

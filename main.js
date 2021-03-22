@@ -16,3 +16,14 @@ cancelBtn.onclick = ()=>{
   menu.classList.remove("active");
   toggleBtn.classList.remove("hide");
 }
+
+//Handle scrolling when tapping on the navbar menu
+menu.addEventListener('click', (event) => {
+  const target = event.target;
+  const link = target.dataset.link
+  if(link == null) {
+    return;
+  }
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({behavior: "smooth"});
+});
