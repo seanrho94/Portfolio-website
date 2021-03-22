@@ -152,6 +152,10 @@ p {
   color: var(--color-blue);
 }
 
+.navbar__menu__item a.active {
+  color: var(--color-orange);
+}
+
 .navbar__icon {
   color: var(--color-blue);
   font-size: var(--font-medium);

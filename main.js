@@ -36,9 +36,31 @@ menu.addEventListener('click', (event) => {
 });
 
 //Handle scrolling when tapping on the navbar menu (https://github.com/cferdinandi/smooth-scroll)
-const scroll = new SmoothScroll('navbar, .navbar__menu a[href*="#"]', {
+const scroll = new SmoothScroll('.home__intro a[href*="#"], .navbar__menu a[href*="#"]', {
   header: '[data-scroll-header]',
   speed: 800
+});
+
+//Active navbar menu based on current section.
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('.navbar__menu li a');
+window.addEventListener('scroll', ()=> {
+  let current = '';
+  
+  sections.forEach( section => {
+    const sectionTop =  section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if(pageYOffset >= (sectionTop - sectionHeight / 7)) {
+      current = section.getAttribute('id');
+    }
+  })
+  
+  navLi.forEach( li => {
+    li.classList.remove('active');
+    if(li.classList.contains(current)) {
+      li.classList.add('active')
+    }
+  })
 });
 
 
