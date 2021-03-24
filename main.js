@@ -46,11 +46,12 @@ const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.navbar__menu li a');
 window.addEventListener('scroll', ()=> {
   let current = '';
-  
+
   sections.forEach( section => {
     const sectionTop =  section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if(pageYOffset >= (sectionTop - sectionHeight / 7)) {
+    //const sectionHeight = section.clientHeight;
+    const navbarHeight = (navbar.clientHeight + 8) // Height of navbar + padding (8)
+    if(pageYOffset >= (sectionTop - navbarHeight)) {
       current = section.getAttribute('id');
     }
   })
