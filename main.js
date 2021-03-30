@@ -41,9 +41,10 @@ const scroll = new SmoothScroll('.home__intro a[href*="#"], .navbar__menu a[href
   speed: 800
 });
 
-//Active navbar menu based on current section.
+//Active hover on navbar menu based on current section.
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.navbar__menu li a');
+
 window.addEventListener('scroll', ()=> {
   let current = '';
 
@@ -63,5 +64,27 @@ window.addEventListener('scroll', ()=> {
     }
   })
 });
+
+// Changes few styles after the loading page.
+const homeContainer = document.querySelector('.home__container');
+const disableScroll = document.querySelector('.disable-scroll');
+const preloader = document.querySelector('.preloader');
+
+function loadingPageInit() {
+  setTimeout(() => {
+    disableScroll.style.overflow = 'visible'; // Enable scroll after the loading page.
+    navbar.style.display = 'block'; // Change display to flex after the loading page.
+    homeContainer.style.display = 'flex'; // Change display to flex after the loading page.
+  
+    setTimeout(() => (navbar.style.opacity = 1), 50); // Fade in animation after the loading page.
+    setTimeout(() => (homeContainer.style.opacity = 1), 50); // Fade in animation after the loading page.
+    setTimeout(() => (preloader.style.display = 'none'), 600);
+  }, 5500);
+}
+
+loadingPageInit();
+
+
+
 
 
